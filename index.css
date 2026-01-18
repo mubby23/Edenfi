@@ -4,12 +4,32 @@ body{
     color: white;
 }
   
-
+#dwnld-now{
+    border: 1px solid white;
+    background: #FD9C49;
+    border-radius: 100px;
+}
 #nav-list{
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    border: 2px solid white;
+    border-radius: 100px;
+    width: 600px;
+    margin: auto;
+    padding: 7px 10px;
+}
+
+#navo{
+    justify-content: space-evenly;
+}
+
+
+
+.nav{
+    padding-left: 7px;
+    padding-right: 7px;
 }
    
 .logo{
@@ -19,4 +39,67 @@ body{
 a{
     text-decoration: none;
     color: white;
+}
+
+.pay{
+    text-align: center;
+}
+
+#over{
+    text-align: center;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 100px;
+    background: #FF9C494D;
+    flex-direction: row;
+    display: flex;
+    margin: 20px auto;
+    padding-top: 0px;
+    padding-bottom: 2px;
+
+}
+
+#phone-img{
+    width:150px;
+}
+
+#digital-presence{
+    border:1px solid white;
+    width: 700px;
+    margin: auto;
+    align-items: center;
+    border-radius: 40px;
+    background:radial-gradient(#FFFFFF,#000000);
+    background-color: #FD9C49;
+}
+
+
+#about-us{
+    text-align: center;
+}
+
+.download{
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 5px 7px;
+    width: 200px;    
+    margin: auto;
+    background: #FD9C49;
+    
+}
+
+.with{
+    text-align: center;
+    font-weight: lighter;
+}
+
+#digital-presence{
+    align-items: center;
+    text-align:center
+}
+
+
+#chat{
+    color:#FD9C49;
 }
