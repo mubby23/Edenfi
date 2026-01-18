@@ -5,14 +5,18 @@
     font-style: normal;
   }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "MyFont", sans-serif;
     background-image: url(images/background.jpg);
     background-size: cover;
     color: white;
 }
-  
-
 
 #nav-list{
     position: relative;
@@ -66,12 +70,18 @@ a{
     font-weight: lighter;
     border: 0.82px solid #FFFFFF70;
     border-radius: 100px;
-    background: #FF9C494D;
-    flex-direction: row;
+    background: #000000CC;
+    padding-right: 21px;
+    padding-left: 5px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
     display: flex;
     width: fit-content;
     margin: 20px auto;
+}
 
+.over-text{
+    font-size: 20px;
 }
 
 #phone-img{
