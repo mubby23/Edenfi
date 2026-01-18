@@ -1,35 +1,50 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./fonts/Ethnocentric-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body{
+    font-family: "MyFont", sans-serif;
     background-image: url(images/background.jpg);
     background-size: cover;
     color: white;
 }
   
-#dwnld-now{
-    border: 1px solid white;
-    background: #FD9C49;
-    border-radius: 100px;
-}
+
+
 #nav-list{
+    position: relative;
     display:flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    border: 2px solid white;
+    border: 1px solid #FFFFFF70;
     border-radius: 100px;
-    width: 600px;
+    width: fit-content;
     margin: auto;
-    padding: 7px 10px;
+    padding: 11.5px 12.7px;
 }
 
 #navo{
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 
+#nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;   
+}
 
-
-.nav{
-    padding-left: 7px;
-    padding-right: 7px;
+#dwnld-now {
+    background: #FD9C49;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 14px 12px;
 }
    
 .logo{
@@ -46,16 +61,16 @@ a{
 }
 
 #over{
+    font-family: "Orbitron", sans-serif;
     text-align: center;
     font-weight: lighter;
-    border: 1px solid white;
+    border: 0.82px solid #FFFFFF70;
     border-radius: 100px;
     background: #FF9C494D;
     flex-direction: row;
     display: flex;
+    width: fit-content;
     margin: 20px auto;
-    padding-top: 0px;
-    padding-bottom: 2px;
 
 }
 
@@ -79,22 +94,28 @@ a{
 }
 
 .download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border: 1px solid white;
     border-radius: 100px;
-    padding: 5px 7px;
-    width: 200px;    
+    padding: 14px 22px;
+    font-size: 24px;
+    width: fit-content;    
     margin: auto;
     background: #FD9C49;
     
 }
 
 .with{
+    font-family: "Orbitron", sans-serif;
     text-align: center;
     font-weight: lighter;
 }
 
 #digital-presence{
+    margin-top: 68px;
     align-items: center;
     text-align:center
 }
@@ -102,4 +123,8 @@ a{
 
 #chat{
     color:#FD9C49;
+}
+
+#features{
+    text-align: center;
 }
