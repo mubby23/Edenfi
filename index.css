@@ -18,7 +18,7 @@ body{
     color: white;
 }
 
-#nav-list{
+#nav {
     position: relative;
     display:flex;
     align-items: center;
@@ -27,10 +27,11 @@ body{
     border-radius: 100px;
     width: fit-content;
     margin: auto;
+    margin-top: 68px;
     padding: 11.5px 12.7px;
 }
 
-#navo{
+#nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
