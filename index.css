@@ -103,20 +103,6 @@ a{
     color:#FD9C49;
 }
 
-#phone-img{
-    width:150px;
-}
-
-#digital-presence{
-    border:1px solid white;
-    width: 700px;
-    margin: auto;
-    align-items: center;
-    border-radius: 40px;
-    background:radial-gradient(#FFFFFF,#000000);
-    background-color: #FD9C49;
-}
-
 .with{
     display: flex;
     justify-content: center;
@@ -148,9 +134,33 @@ a{
 }
 
 #digital-presence{
-    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 61px;
+    justify-content: start;   
     align-items: center;
-    text-align:center
+    overflow: hidden;
+    border:1px solid white;
+    width: 700px;
+    height: 350px;
+    margin: auto;
+    margin-top: 68px;
+    border-radius: 30px;
+    background:radial-gradient(#FFFFFF,#000000);
+    background-color: #FD9C49;
+}
+
+.dig-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+#phone-img{
+    width: 250px;
 }
 
 #about-us{
