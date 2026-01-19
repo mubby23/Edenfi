@@ -61,8 +61,12 @@ a{
     color: white;
 }
 
-.pay{
-    text-align: center;
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
 }
 
 #over{
@@ -84,6 +88,19 @@ a{
 
 .over-text{
     font-size: 20px;
+    letter-spacing: -0.8px;
+}
+
+.pay {
+    text-align: center;
+}
+
+.pay-text{
+    font-size: 96px;
+}
+
+#chat{
+    color:#FD9C49;
 }
 
 #phone-img{
@@ -100,9 +117,20 @@ a{
     background-color: #FD9C49;
 }
 
-
-#about-us{
+.with{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.with-text{
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px;
+    color: #FFFFFFE0;
+    width: 756px;
+    text-align: center;
+    font-weight: lighter;
 }
 
 .download{
@@ -116,14 +144,7 @@ a{
     font-size: 24px;
     width: fit-content;    
     margin: auto;
-    background: #FD9C49;
-    
-}
-
-.with{
-    font-family: "Orbitron", sans-serif;
-    text-align: center;
-    font-weight: lighter;
+    background: #FD9C49;    
 }
 
 #digital-presence{
@@ -132,9 +153,8 @@ a{
     text-align:center
 }
 
-
-#chat{
-    color:#FD9C49;
+#about-us{
+    text-align: center;
 }
 
 #features{
