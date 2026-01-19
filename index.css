@@ -133,6 +133,16 @@ a{
     background: #FD9C49;    
 }
 
+#about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 150px;
+    margin-top: 86px;
+    text-align: center;
+}
+
 #digital-presence{
     display: flex;
     flex-direction: column;
@@ -163,10 +173,7 @@ a{
     width: 250px;
 }
 
-#about-us{
-    margin-top: 86px;
-    text-align: center;
-}
+
 
 #features{
     text-align: center;
