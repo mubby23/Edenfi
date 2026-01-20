@@ -3,7 +3,14 @@
     src: url("./fonts/Ethnocentric-Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: "Conthrax";
+    src: url("./fonts/Conthrax-SemiBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -99,18 +106,18 @@ a{
     font-size: 96px;
 }
 
-#chat{
+#chat {
     color:#FD9C49;
 }
 
-.with{
+.with {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.with-text{
+.with-text {
     font-family: "Orbitron", sans-serif;
     font-size: 24px;
     color: #FFFFFFE0;
@@ -119,7 +126,7 @@ a{
     font-weight: lighter;
 }
 
-.download{
+.download {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,17 +140,18 @@ a{
     background: #FD9C49;    
 }
 
-#about-us{
+#about-us {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 150px;
     margin-top: 86px;
+    margin-bottom: 47px;
     text-align: center;
 }
 
-#digital-presence{
+#digital-presence {
     display: flex;
     flex-direction: column;
     padding-top: 61px;
@@ -160,7 +168,7 @@ a{
     background-color: #FD9C49;
 }
 
-.dig-text{
+.dig-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,11 +177,59 @@ a{
     font-size: 22px;
 }
 
-#phone-img{
+#phone-img {
     width: 250px;
 }
 
+.about-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
 
+.about-subtitle {
+    font-family: "Conthrax", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about-subtitle span {
+    color: #FD9C49;
+}
+
+.about-text {
+    width: 720px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 28px;
+    width: 558px;
+}
+
+#values div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 265px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
 
 #features{
     text-align: center;
