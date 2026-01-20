@@ -231,6 +231,25 @@ a{
     font-weight: 400;
 }
 
-#features{
+#features {
     text-align: center;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.features-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.features-subtitle {
+    max-width: 820px;
+    margin: 0 auto;
+    font-family: "Orbitron", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #FFFFFFE0;
 }
