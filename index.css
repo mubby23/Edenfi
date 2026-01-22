@@ -349,8 +349,37 @@ a{
 }
 
 .testimonial-wrapper {
-    display: flex;
-    
+    position: relative;
+    width: 99%;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-btn.left {
+    left: 22px;   
+}
+
+.nav-btn.right {
+    right: 22px;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .testimonial-cards::-webkit-scrollbar {
