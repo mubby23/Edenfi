@@ -60,6 +60,7 @@ TestimonialData.forEach(testimonial => {
                 <img class="dp" src="${testimonial.image}.jpg" alt="${testimonial.name}">
                 <h3 class="username">${testimonial.name}</h3>
             </div>
+            <img class="xlogo" src="./images/xlogo.svg" alt="x logo">
         </div>
         <div class="tweet">${testimonial.tweet}</div>
     `;
