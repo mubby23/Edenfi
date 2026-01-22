@@ -348,6 +348,11 @@ a{
     font-size: 50px;
 }
 
+.testimonial-wrapper {
+    display: flex;
+    
+}
+
 .testimonial-cards::-webkit-scrollbar {
     display: none;
 }
