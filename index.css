@@ -330,6 +330,10 @@ a{
     width: fit-content;
 }
 
+.testimonial-cards::-webkit-scrollbar {
+    display: none;
+}
+
 .testimonial-cards {
     position: relative;
     display: flex;
@@ -341,20 +345,38 @@ a{
 
     overflow-x: auto; 
     overflow-y: hidden;
+    scrollbar-width: none;
 }
 
 .testimonial-card {
     flex: 0 0 auto;
-    width: 300px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    width: 350px;
+    height: 240px;
     background-color: #ffffff;
     border-radius: 20px;
 }
 
 .testimonial-card .card-top {
+    padding: 12px 34px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.testimonial-card .profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-card .tweet {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
 }
 
 
