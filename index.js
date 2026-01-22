@@ -55,9 +55,13 @@ TestimonialData.forEach(testimonial => {
     card.className = 'testimonial-card';
     
     card.innerHTML = `
-      <img src="${testimonial.image}.jpg" alt="${testimonial.name}">
-      <h3 class="name">${testimonial.name}</h3>
-      <div class="tweet">${testimonial.tweet}</div>
+        <div class="card-top">
+            <div class="profile">
+                <img class="dp" src="${testimonial.image}.jpg" alt="${testimonial.name}">
+                <h3 class="username">${testimonial.name}</h3>
+            </div>
+        </div>
+        <div class="tweet">${testimonial.tweet}</div>
     `;
     
     testimonialCards.appendChild(card);
