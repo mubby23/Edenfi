@@ -2,7 +2,7 @@ const TestimonialData = [
     { 
         image: "ola_crypt", 
         name: "Ola_Crrypt", 
-        tweet: "A wallet that feels like fintech…<br>But runs on crypto.<br>Borderless. Permissionless. Investable.<ol><li>USDC transfers, fast and final</li><li>Real estate investing from your phone</li><li>Built-in chat</li><li>Built for Africa, not just built in Africa</li></ol>That’s EdenFi."
+        tweet: "A wallet that feels like fintech…<br>But runs on crypto.<br>Borderless. Permissionless. Investable.<ul><li>USDC transfers, fast and final</li><li>Real estate investing from your phone</li><li>Built-in chat</li><li>Built for Africa, not just built in Africa</li></ul>That’s EdenFi."
     },
 
     {
