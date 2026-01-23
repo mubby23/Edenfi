@@ -1,6 +1,6 @@
 const TestimonialData = [
     { 
-        image: "ola_crypt", 
+        image: "ola_crrypt", 
         name: "Ola_Crrypt", 
         tweet: "A wallet that feels like fintech…<br>But runs on crypto.<br>Borderless. Permissionless. Investable.<ul><li>USDC transfers, fast and final</li><li>Real estate investing from your phone</li><li>Built-in chat</li><li>Built for Africa, not just built in Africa</li></ul>That’s EdenFi."
     },
@@ -57,7 +57,7 @@ TestimonialData.forEach(testimonial => {
     card.innerHTML = `
         <div class="card-top">
             <div class="profile">
-                <img class="dp" src="${testimonial.image}.jpg" alt="${testimonial.name}">
+                <img class="dp" src="./images/${testimonial.image}.jpg" alt="${testimonial.name}">
                 <h3 class="username">${testimonial.name}</h3>
             </div>
             <img class="xlogo" src="./images/xlogo.svg" alt="x logo">
