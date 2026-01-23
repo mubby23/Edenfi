@@ -408,6 +408,10 @@ a{
     right: 22px;
 }
 
+.nav-btn.right img {
+    rotate: 180deg;
+}
+
 .nav-btn:hover {
     background: rgba(0, 0, 0, 0.85);
 }
