@@ -157,6 +157,7 @@ FaqsData.forEach(faqItem => {
         // Close other FAQs
         document.querySelectorAll('.faq-card').forEach(card => {
             if (card !== faq) {
+                card.querySelector('.question').classList.remove('active');
                 card.querySelector('.answer').classList.remove('active');
                 card.querySelector('.faq-box-icon').classList.remove('rotated');
             }
