@@ -154,14 +154,13 @@ FaqsData.forEach(faqItem => {
         const icon = faq.querySelector('.faq-box-icon');
         icon.classList.toggle('rotated');
 
-        
-        // Optional: Close other FAQs
-        // document.querySelectorAll('.faq-card').forEach(card => {
-        //     if (card !== faq) {
-        //         card.querySelector('.answer').classList.remove('active');
-        //         card.querySelector('.faq-box-icon').classList.remove('rotated');
-        //     }
-        // });
+        // Close other FAQs
+        document.querySelectorAll('.faq-card').forEach(card => {
+            if (card !== faq) {
+                card.querySelector('.answer').classList.remove('active');
+                card.querySelector('.faq-box-icon').classList.remove('rotated');
+            }
+        });
     });
 
 
