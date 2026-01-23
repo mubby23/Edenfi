@@ -66,4 +66,34 @@ TestimonialData.forEach(testimonial => {
     `;
     
     testimonialCards.appendChild(card);
-  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("testimonialCards");
+    const scrollAmount = 328; // card width (300) + gap (28)
+
+    document.querySelector(".nav-btn.left").addEventListener("click", () => {
+        container.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth"
+        });
+    });
+
+    document.querySelector(".nav-btn.right").addEventListener("click", () => {
+        container.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+    });
+
+    function updateNavButtons() {
+        document.querySelector(".nav-btn.left").disabled = container.scrollLeft <= 0;
+        document.querySelector(".nav-btn.right").disabled =
+            container.scrollLeft + container.clientWidth >= container.scrollWidth;
+    }
+    
+    container.addEventListener("scroll", updateNavButtons);
+    updateNavButtons();
+    
+});
+
