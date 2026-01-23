@@ -137,4 +137,6 @@ FaqsData.forEach(faqItem => {
         </div>
         <div class="answer">${faqItem.answer}</div>
     `;
+
+    faqsCards.appendChild(faq)
 })

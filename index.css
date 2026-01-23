@@ -549,3 +549,52 @@ a{
     width: 418px;
     height: 418px;
 }
+
+.faqs {
+    position: relative;
+    padding: 0 120px;
+}
+
+.faqs-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    margin-bottom: 57px;
+}
+
+.faqs-title {
+    font-size: 64px;
+}
+
+.faqs-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.faqs-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Conthrax", sans-serif;
+    font-weight: 600;
+}
+
+.faq-card {
+    background: #110F0B;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding: 33px;
+    border-radius: 50px;
+}
+
+.faq-card .question {
+    font-size: 24px;
+}
+
+.faq-card .answer {
+    color: #9A9A9A;
+    font-size: 18px;
+}
