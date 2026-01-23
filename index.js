@@ -48,6 +48,34 @@ const TestimonialData = [
     }
 ]
 
+const FaqsData = [
+    {
+        question: "What is EdenFi and how is it different from other digital wallets like Revolut or MetaMask",
+        answer: "EdenFi is Africa’s first smart wallet combining instant stablecoin transfers, real estate investing, and social connectivity. Unlike Revolut or MetaMask, EdenFi is built specifically for Africans, with low transfer fees, a real estate marketplace, lower FX markups than Western Union and LemFi, plus localised off-ramp support in key markets like Nigeria, Ghana, and South Africa."
+    },
+
+    {
+        question: "How does EdenFi give back to Africa",
+        answer: "EdenFi gives back by building financial infrastructure designed for African realities, not retrofitted from Western systems. A portion of platform revenue is reinvested into expanding local liquidity, supporting African real estate developers, and enabling more affordable cross-border access to capital. By keeping fees low and value circulating within African markets, EdenFi helps users retain wealth and invest directly into the continent’s growth."
+    },
+
+    {
+        question: "How much does it cost to use EdenFi",
+        answer: "Creating and maintaining an EdenFi wallet is free. Users only pay minimal transaction fees when sending funds or investing, with transparent pricing and no hidden charges. Compared to traditional remittance services, EdenFi offers significantly lower fees and tighter FX spreads, helping users keep more of their money."
+    },
+
+    {
+        question: "How secure is EdenFi for storing and sending money?",
+        answer: "EdenFi is built with security at its core. Funds are protected using industry-standard encryption, secure key management, and blockchain-based transaction integrity. Users maintain control over their assets while benefiting from fraud monitoring and secure off-ramp partners. EdenFi does not rehypothecate user funds, ensuring transparency and trust at every step."
+    },
+
+    {
+        question: "How fast can I send money from the UK to Africa using EdenFi?",
+        answer: "Transfers using EdenFi are near-instant. Stablecoin transactions typically settle within seconds, regardless of borders. Once received, funds can be converted and withdrawn locally through supported off-ramps, often within minutes to a few hours, depending on the destination country and payment method."
+    }
+];
+
+
 const testimonialCards = document.getElementById('testimonialCards')
 
 TestimonialData.forEach(testimonial => {
@@ -97,3 +125,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
+const faqsCards = document.getElementById("faqsCards");
+
+FaqsData.forEach(faqItem => {
+    const faq = document.createElement('div');
+    faq.className = 'faq-card';
+
+    faq.innerHTML = `
+        <div>
+            <div class="question">${faqItem.question}</div>
+        </div>
+        <div class="answer">${faqItem.answer}</div>
+    `;
+})
