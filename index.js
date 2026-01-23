@@ -144,12 +144,16 @@ FaqsData.forEach(faqItem => {
     const questionDiv = faq.querySelector('.question');
     questionDiv.addEventListener('click', () => {
         // Toggle answer visibility
-        const answerDiv = faq.querySelector('.question');
+        const question = faq.querySelector('.question');
+        question.classList.toggle('active');
+
+        const answerDiv = faq.querySelector('.answer');
         answerDiv.classList.toggle('active');
         
         // Rotate icon
         const icon = faq.querySelector('.faq-box-icon');
         icon.classList.toggle('rotated');
+
         
         // Optional: Close other FAQs
         // document.querySelectorAll('.faq-card').forEach(card => {

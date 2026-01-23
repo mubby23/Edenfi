@@ -553,6 +553,7 @@ a{
 .faqs {
     position: relative;
     padding: 0 120px;
+    margin-bottom: 69px;
 }
 
 .faqs-header {
@@ -585,8 +586,7 @@ a{
     background: #110F0B;
     display: flex;
     flex-direction: column;
-    gap: 33px;
-    padding: 33px;
+    padding: 33px 33px 0px 33px;
     border-radius: 50px;
 }
 
@@ -595,6 +595,7 @@ a{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    padding-bottom: 33px;
 }
 
 .faq-card .question h3 {
@@ -637,4 +638,13 @@ a{
 .faq-card .answer {
     color: #9A9A9A;
     font-size: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+.faq-card .answer.active {
+    max-height: 200px;
+    padding-bottom: 33px;
+
 }
