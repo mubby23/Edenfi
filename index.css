@@ -477,9 +477,11 @@ a{
 }
 
 .ads {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 31px;
     margin-top: 100px;
     padding: 0px 120px;
 }
@@ -527,4 +529,18 @@ a{
     border: 1px solid #FFFFFF;
     border-radius: 6px;
     object-fit: contain;
+}
+
+.ads-img {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 553px;
+    height: 568px;
+    background-image: url("./images/ads-bg.svg");
+    opacity: 20%;
+    background-color: #FD9C49;
+    border-radius: 50px;
+    mix-blend-mode: plus-lighter;
 }
