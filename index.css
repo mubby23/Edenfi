@@ -484,7 +484,7 @@ a{
     gap: 31px;
     margin-top: 100px;
     padding: 0px 120px;
-    margin-bottom: 58px;
+    margin-bottom: 149px;
 }
 
 .ads-text {
@@ -540,8 +540,12 @@ a{
     width: 553px;
     height: 568px;
     background-image: url("./images/ads-bg.svg");
-    opacity: 20%;
-    background-color: #FD9C49;
+    background-color: hsla(28, 98%, 64%, 0.2);
     border-radius: 50px;
     mix-blend-mode: plus-lighter;
+}
+
+.ellipse img {
+    width: 418px;
+    height: 418px;
 }
