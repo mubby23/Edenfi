@@ -476,4 +476,8 @@ a{
     font-size: 16px;
 }
 
-
+.ads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
