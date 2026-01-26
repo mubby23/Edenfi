@@ -598,3 +598,12 @@ a{
     color: #9A9A9A;
     font-size: 18px;
 }
+
+
+.footer{
+    display: flex;
+    background: #FD9C49;
+    width: auto;
+    height: 200px;
+}
+ 
