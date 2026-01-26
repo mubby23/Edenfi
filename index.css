@@ -553,6 +553,7 @@ a{
 .faqs {
     position: relative;
     padding: 0 120px;
+    margin-bottom: 69px;
 }
 
 .faqs-header {
@@ -585,18 +586,67 @@ a{
     background: #110F0B;
     display: flex;
     flex-direction: column;
-    gap: 33px;
-    padding: 33px;
+    padding: 33px 33px 0px 33px;
     border-radius: 50px;
 }
 
 .faq-card .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 33px;
+}
+
+.faq-card .question h3 {
     font-size: 24px;
+}
+
+.faq-box-icon {
+    flex: 0 0 auto;
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 23px;
+    margin-left: auto;
+}
+
+.faq-box-icon::before,
+.faq-box-icon::after {
+    background: #FFFFFF;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: all ease-out 0.2s;
+}
+
+.faq-box-icon::before {
+    top: 0;
+}
+
+.faq-box-icon::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.question.active .faq-box-icon::after {
+    transform: rotate(0deg);
 }
 
 .faq-card .answer {
     color: #9A9A9A;
     font-size: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+.faq-card .answer.active {
+    max-height: 200px;
+    padding-bottom: 33px;
+
 }
 
 

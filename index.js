@@ -133,10 +133,37 @@ FaqsData.forEach(faqItem => {
 
     faq.innerHTML = `
         <div>
-            <div class="question">${faqItem.question}</div>
+            <div class="question">
+                <h3>${faqItem.question}</h3>
+                <span class="faq-box-icon"></span>
+            </div>
         </div>
         <div class="answer">${faqItem.answer}</div>
     `;
+
+    const questionDiv = faq.querySelector('.question');
+    questionDiv.addEventListener('click', () => {
+        // Toggle answer visibility
+        const question = faq.querySelector('.question');
+        question.classList.toggle('active');
+
+        const answerDiv = faq.querySelector('.answer');
+        answerDiv.classList.toggle('active');
+        
+        // Rotate icon
+        const icon = faq.querySelector('.faq-box-icon');
+        icon.classList.toggle('rotated');
+
+        // Close other FAQs
+        document.querySelectorAll('.faq-card').forEach(card => {
+            if (card !== faq) {
+                card.querySelector('.question').classList.remove('active');
+                card.querySelector('.answer').classList.remove('active');
+                card.querySelector('.faq-box-icon').classList.remove('rotated');
+            }
+        });
+    });
+
 
     faqsCards.appendChild(faq)
 })
