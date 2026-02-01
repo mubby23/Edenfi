@@ -660,10 +660,19 @@ a{
     padding-left: 110px;
     padding-right: 110px;
     gap: 10px;;
-    flex-direction: column;
+    
 }
  
 .footer-title{
     font-size:larger;
     padding-bottom: 20px;
+}
+
+.footer-body{
+    display: flex;
+    flex-direction: column;
+    font-size: 9 px;
+    font-weight: 200px;
+    gap: 12px;
+
 }
