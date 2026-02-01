@@ -672,7 +672,23 @@ a{
     display: flex;
     flex-direction: column;
     font-size: 9 px;
-    font-weight: 200px;
+    font-weight: lighter;
     gap: 12px;
 
+}
+
+
+.barcode-img2{
+    width:500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+   
+
+
+barcode-img{
+    display: flex;
+    justify-content: center;
 }
